@@ -36,7 +36,7 @@ body {
 .card {
   background-color: var(--White);
   width: 90vw;
-  height: 90vh;
+  height: 600px;
   margin: auto;
   border-radius: 1rem;
   display: grid;
@@ -55,7 +55,7 @@ section {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  justify-content: space-between;
 }
 
 h2 {
@@ -128,9 +128,6 @@ button:hover {
   picture {
     background-image: url(images/image-product-desktop.jpg);
     border-radius: 1rem 0 0 1rem;
-  }
-  section {
-    justify-content: space-between;
   }
   section img {
     left: 20%;
