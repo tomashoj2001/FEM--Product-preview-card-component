@@ -51,6 +51,10 @@ picture {
   background-size: cover;
 }
 
+picture img {
+  display: none;
+}
+
 section {
   padding: 2rem;
   display: flex;
@@ -129,6 +133,9 @@ button:hover {
     background-image: url(images/image-product-desktop.jpg);
     border-radius: 1rem 0 0 1rem;
   }
+  /* section {
+    justify-content: space-between;
+  } */
   section img {
     left: 20%;
   }
