@@ -16,7 +16,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* outline: red 1px solid;  */
+  /* outline: red 1px solid; */
 }
 
 html {
@@ -36,15 +36,19 @@ body {
 .card {
   background-color: var(--White);
   width: 90vw;
+  height: 90vh;
   margin: auto;
-  padding-top: 0.1px;
-  border-radius: 1rem; 
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 40% 60%;
 }
 
-img {
-  display: block;
+picture {
+  height: 100%;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
+  background-image: url(images/image-product-mobile.jpg);
+  background-size: cover;
 }
 
 main {
@@ -103,6 +107,7 @@ button {
 main img {
   height: 20px;
   width: auto;
+  border-radius: 0;
   position: absolute;
   left: 25%;
   top: .8rem;
@@ -111,4 +116,23 @@ main img {
 button:hover {
   background-color: hsl(158, 39%, 25%);
   transition: all 0.3s;
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 38vw;
+    height: 60vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+  }
+  picture {
+    background-image: url(images/image-product-desktop.jpg);
+    border-radius: 1rem 0 0 1rem;
+  }
+  main {
+    justify-content: space-between;
+  }
+  main img {
+    left: 20%;
+  }
 }
